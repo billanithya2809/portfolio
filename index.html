@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nithya's Portfolio</title>
+    <meta name="description" content="Portfolio of Nithya Reddy Billa, showcasing projects and skills.">
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cer.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">NITHYA REDDY BILLA</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+
+          <li><a href="#contact">Contact</a></li>
+
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">NITHYA REDDY BILLA/div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/linkedin.jpg" alt="Nithya's profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Nithya Reddy Billa</h1>
+        <p class="styled-paragraph">Software Engineer, Web Developer, App Developer, Data Analyst</p>
+
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Nithyafinal.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="window.location='#contact'">
+            Contact Info
+          </button>
+          
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/nithya-reddy-billa-2b85b9202/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Nithyabilla28'"
+          />
+        </div>
+      </div>
+    </section>  
+    
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <br>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <!-- <img src="./assets/linkedin.jpg" alt="Profile picture" class="about-pic" /> -->
+        </div>
+        <div class="about-details-container">
+          <div class="text-container">
+            <div style="font-size: 1.2em; line-height: 1.4;">
+              <p>I am a graduate student at the University of North Carolina at Charlotte, pursuing a Master’s degree in Computer Science (2024–2026). My academic journey focuses on Python programming, data mining, machine learning, and data visualization, providing me with a strong foundation in data-driven problem-solving.
+                I hold a Bachelor’s degree in Computer Science from the Institute of Aeronautical Engineering (2020–2024). During my undergraduate studies, I spearheaded impactful projects, including "Immediate Animal Recognition and Anticipation Using ML Approaches," where I leveraged GSM modules, Arduino Uno, and machine learning classifiers to enhance recognition accuracy. Additionally, I implemented blockchain technology to prevent counterfeit drugs, using Ethereum and cryptographic algorithms to validate and track original medicines. 
+                Professionally, I gained hands-on experience as a Web Developer Intern at CodTech IT Solutions, where I designed and developed responsive web pages, including portfolio and e-commerce platforms. At IdeaBytes, I contributed to innovative projects like a text recognition system using Google ML Kit and a speech emotion recognition model, showcasing my expertise in app development and machine learning.  
+                I am passionate about leveraging cutting-edge technologies to create impactful solutions. Currently, I am seeking a summer internship to collaborate on challenging projects and apply my technical skills. Feel free to connect with me at billanithyareddy2809@gmail.com.</p>
+          
+      </div>
+      
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h2 class="experience-sub-title">Education</h2>
+            <hr class="separator"> <!-- Line separator between sections -->
+
+            
+            <div class="education-item">
+              <h3>University of North Carolina, Charlotte (UNCC)</h3>
+              <p>Master of Science | Computer Science</p>
+              <p>Aug 2024 - May 2026</p>
+              <p>GPA:4.0/4.0</p>
+              <p>Concentration: Data Science</p>
+            </div>
+            
+            <div class="education-item">
+              <h3>INSTITUTE OF AERONAUTICAL ENGINEERING</h3>
+              <p>Bachelor of Technology | Computer Science and Engineering(DATA SCIENCE)</p>
+              <p>July 2020 - May 2024</p>
+              <p>CGPA: 8.62/10</p>
+            </div>
+          </div>
+          
+          <hr class="separator"> <!-- Line separator between sections -->
+          
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h2 class="experience-sub-title">Experience</h2>
+            <hr class="separator"> <!-- Line separator between sections -->
+
+            
+            <div class="experience-item">
+              <h3>IdeaBytes Private Limited</h3>
+              <p>Software Developer Intern<br />Nov 2022 – Jan 2023</p>
+            </div>
+            
+
+            <div class="experience-item">
+              <h3>CodTech IT solutions</h3>
+              <p>Web Developer Intern<br />Feb 2024 – Mar 2024</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    
+    
+    
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                 src="./assets/blockchain.jpg"
+                alt="Implementation of Blockchain Technology in secured supply of anti-counterfeit drugs"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Secured supply of anti-counterfeit drugs</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/billanithya2809/block-chain'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+              src="./assets/speechrecog.webp"
+              alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Speech emotion recognition</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/billanithya2809/speech-emotion-recognition'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/animal.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Animal Recognition Device-ML</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/billanithya2809/immediate-animal-recognition-using-ml-approches'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#certifications'"
+      />
+    </section>
+    <section id="certifications">
+      <p class="section__text__p1">Showcasing My</p>
+      <h1 class="title">Certifications</h1>
+      <div class="certifications-flip-container">
+
+
+        <!-- Certification 3: IBM -->
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/ibm.webp" alt="IBM Logo" class="cert-logo" />
+              <h2 class="cert-title">Data Science Tools</h2>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                Successfully completed Data Science Tools by IBM
+                SkillsBuild.
+              </p>
+              <button
+                class="btn btn-view-cert"
+                onclick="window.open('./assets/IBMDS.jpg')"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/aws.png" alt="AWS Logo" class="cert-logo" />
+              <h2 class="cert-title">Math for Machine Learning</h2>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                Completed a course Training for Math for machine learning by AWS
+                
+              </p>
+              <button
+                class="btn btn-view-cert"
+                onclick="window.open('./assets/ml.jpg')"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/aws.png" alt="NPTEL Logo" class="cert-logo" />
+              <h2 class="cert-title">Data Analytics Fundamentals</h2>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                Completed a course Training for Data Analytics Fundamentals  by AWS
+
+              </p>
+              <button
+                class="btn btn-view-cert"
+                onclick="window.open('./assets/DA.jpg')"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Certification 1: Cisco -->
+
+         <!-- Certification 2: AWS -->
+       <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="./assets/ciscopic.webp" alt="AWS Logo" class="cert-logo" />
+            <h2 class="cert-title">Programming Essentials for Python</h2>
+          </div>
+          <div class="flip-card-back">
+            <p>
+                Awarded by Cisco Networking Academy for completing 
+                Programming Essentials for Python.
+            </p>
+            <button
+              class="btn btn-view-cert"
+              onclick="window.open('./assets/ciscop.jpg')"
+            >
+              View Certificate
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/ciscopic.webp" alt="Cisco Logo" class="cert-logo" />
+              <h2 class="cert-title">Programming Essentials for C</h2>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                Awarded by Cisco Networking Academy for completing Programming
+                Essentials for C.
+              </p>
+              <button
+                class="btn btn-view-cert"
+                onclick="window.open('./assets/ciscoc.png')"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+        </div>
+          
+
+        
+       
+
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/ibm.webp" alt="IBM Logo" class="cert-logo" />
+              <h2 class="cert-title">Introduction to Data Science</h2>
+            </div>
+            <div class="flip-card-back">
+              <p>
+                Certified by IBM  upon completion of Introduction to Data Science.
+
+              </p>
+              <button
+                class="btn btn-view-cert"
+                onclick="window.open('./assets/ibmintro.jpg')"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+        </div>
+    
+        
+    
+        <!-- Certification 4: NPTEL -->
+       
+      </div>
+      
+    </section>
+    
+    
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+    
+        <!-- Email -->
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:billanithyareddy2809@gmail.com">billanithyareddy2809@gmail.com</a></p>
+        </div>
+    
+        <!-- LinkedIn -->
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+    
+        <!-- Phone -->
+        <div class="contact-info-container">
+          <img
+            src="./assets/phone.png"
+            alt="Phone icon"
+            class="icon contact-icon phone-icon"
+          />
+          <p><a href="tel:+19808807071">+1-980-880-7071</a></p>
+        </div>
+    
+        <!-- GitHub -->
+        <div class="contact-info-container">
+          <img
+            src="./assets/github.png"
+            alt="GitHub icon"
+            class="icon contact-icon github-icon"
+          />
+          <p><a href="https://github.com/billanithya2809">GitHub</a></p>
+        </div>
+    
+      </div>
+    </section>
+    
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+
+          </ul>
+        </div>
+      </nav>
+      <p>Thank you for checking out my work! I appreciate your support and hope you find something that resonates with you. Your engagement means a lot to me!</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
